@@ -75,8 +75,8 @@ menubar = Menu()
 wn.config(menu=menubar)
 
 fmenu = Menu(menubar)
-# додаєм кнопку File в верхнє меню
-menubar.add_cascade(label="File", menu=fmenu)  
+
+menubar.add_cascade(label="File", menu=fmenu)  # додаєм кнопку File в верхнє меню
 
 # додаєм підпункти кнопки File
 fmenu.add_command(label="New File", accelerator="Ctrl+N", command=get_new_file)
